@@ -1,7 +1,24 @@
 class Person {
-
+    constructor(name){
+        this.name = name;
+    }
+    getGreeting(){
+        return 
+    }
 }
 
-const me = new Person();
+class Person2 {
+    constructor(name = 'someone', age = 0){
+        this.name = name;
+        this.age  = age;
+    }
+    getDescription(){
+       return `my name is ${this.name}`
+    }
+}
 
-console.log(me)
+const me = new Person('Jackie Santana');
+
+const jackie = new Person2('Jackie', 26)
+
+console.log(jackie.getDescription())
