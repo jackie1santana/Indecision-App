@@ -13,6 +13,13 @@ h1 {
     font-size:2.6rem;
 }
 
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: default;
+}
 
 
 
